@@ -1,0 +1,267 @@
+{
+  "BT1": {
+    "value": "3 x AAA / 4.5 V",
+    "pins": {
+      "1": "VBAT",
+      "2": "GND"
+    },
+    "footprint": ""
+  },
+  "SW1": {
+    "value": "ON",
+    "pins": {
+      "1": "VBAT",
+      "2": "VCC_SW"
+    },
+    "footprint": "Button_Switch_THT:SW_PUSH_6mm"
+  },
+  "C1": {
+    "value": "100n",
+    "pins": {
+      "1": "VCC_SW",
+      "2": "GND"
+    },
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+  },
+  "C2": {
+    "value": "1u",
+    "pins": {
+      "1": "VCC_SW",
+      "2": "GND"
+    },
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+  },
+  "#FLG001": {
+    "value": "PWR_FLAG",
+    "pins": {
+      "1": "VCC_SW"
+    },
+    "footprint": ""
+  },
+  "#FLG002": {
+    "value": "PWR_FLAG",
+    "pins": {
+      "1": "GND"
+    },
+    "footprint": ""
+  },
+  "U1": {
+    "value": "ATtiny2313-20PU",
+    "pins": {
+      "1": "RESET_N",
+      "2": "INC_RT_N",
+      "3": "DEC_RT_N",
+      "6": "INC_GN_N",
+      "7": "DEC_GN_N",
+      "8": "INC_BL_N",
+      "9": "DEC_BL_N",
+      "10": "GND",
+      "11": "STORE_N",
+      "12": "SOLO_N",
+      "14": "PWM_RT",
+      "15": "PWM_GN",
+      "16": "PWM_BL",
+      "17": "MOSI",
+      "18": "MISO",
+      "19": "SCK",
+      "20": "VCC_SW",
+      "4": null,
+      "5": null,
+      "13": null
+    },
+    "footprint": "Package_DIP:DIP-20_W7.62mm"
+  },
+  "R1": {
+    "value": "10k",
+    "pins": {
+      "1": "VCC_SW",
+      "2": "RESET_N"
+    },
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+  },
+  "JP1": {
+    "value": "SOLO",
+    "pins": {
+      "1": "SOLO_N",
+      "2": "GND"
+    },
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+  },
+  "J1": {
+    "value": "AVR ISP",
+    "pins": {
+      "1": "MISO",
+      "2": "VCC_SW",
+      "3": "SCK",
+      "4": "MOSI",
+      "5": "RESET_N",
+      "6": "GND"
+    },
+    "footprint": "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical"
+  },
+  "D1": {
+    "value": "RGB / Common Anode",
+    "pins": {
+      "1": "K_RT",
+      "2": "VCC_SW",
+      "3": "K_GN",
+      "4": "K_BL"
+    },
+    "footprint": ""
+  },
+  "Q1": {
+    "value": "BC547B",
+    "pins": {
+      "1": "C_RT",
+      "2": "B_RT",
+      "3": "GND"
+    },
+    "footprint": "Package_TO_SOT_THT:TO-92_Inline"
+  },
+  "R2": {
+    "value": "330R",
+    "pins": {
+      "1": "K_RT",
+      "2": "C_RT"
+    },
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+  },
+  "R5": {
+    "value": "1k",
+    "pins": {
+      "1": "PWM_RT",
+      "2": "B_RT"
+    },
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+  },
+  "R8": {
+    "value": "100k",
+    "pins": {
+      "1": "B_RT",
+      "2": "GND"
+    },
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+  },
+  "Q2": {
+    "value": "BC547B",
+    "pins": {
+      "1": "C_GN",
+      "2": "B_GN",
+      "3": "GND"
+    },
+    "footprint": "Package_TO_SOT_THT:TO-92_Inline"
+  },
+  "R3": {
+    "value": "330R",
+    "pins": {
+      "1": "K_GN",
+      "2": "C_GN"
+    },
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+  },
+  "R6": {
+    "value": "1k",
+    "pins": {
+      "1": "PWM_GN",
+      "2": "B_GN"
+    },
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+  },
+  "R9": {
+    "value": "100k",
+    "pins": {
+      "1": "B_GN",
+      "2": "GND"
+    },
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+  },
+  "Q3": {
+    "value": "BC547B",
+    "pins": {
+      "1": "C_BL",
+      "2": "B_BL",
+      "3": "GND"
+    },
+    "footprint": "Package_TO_SOT_THT:TO-92_Inline"
+  },
+  "R4": {
+    "value": "330R",
+    "pins": {
+      "1": "K_BL",
+      "2": "C_BL"
+    },
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+  },
+  "R7": {
+    "value": "1k",
+    "pins": {
+      "1": "PWM_BL",
+      "2": "B_BL"
+    },
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+  },
+  "R10": {
+    "value": "100k",
+    "pins": {
+      "1": "B_BL",
+      "2": "GND"
+    },
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+  },
+  "SW2": {
+    "value": "INC_rt",
+    "pins": {
+      "1": "INC_RT_N",
+      "2": "GND"
+    },
+    "footprint": "Button_Switch_THT:SW_PUSH_6mm"
+  },
+  "SW3": {
+    "value": "DEC_rt",
+    "pins": {
+      "1": "DEC_RT_N",
+      "2": "GND"
+    },
+    "footprint": "Button_Switch_THT:SW_PUSH_6mm"
+  },
+  "SW4": {
+    "value": "INC_gn",
+    "pins": {
+      "1": "INC_GN_N",
+      "2": "GND"
+    },
+    "footprint": "Button_Switch_THT:SW_PUSH_6mm"
+  },
+  "SW5": {
+    "value": "DEC_gn",
+    "pins": {
+      "1": "DEC_GN_N",
+      "2": "GND"
+    },
+    "footprint": "Button_Switch_THT:SW_PUSH_6mm"
+  },
+  "SW6": {
+    "value": "INC_bl",
+    "pins": {
+      "1": "INC_BL_N",
+      "2": "GND"
+    },
+    "footprint": "Button_Switch_THT:SW_PUSH_6mm"
+  },
+  "SW7": {
+    "value": "DEC_bl",
+    "pins": {
+      "1": "DEC_BL_N",
+      "2": "GND"
+    },
+    "footprint": "Button_Switch_THT:SW_PUSH_6mm"
+  },
+  "SW8": {
+    "value": "STORE",
+    "pins": {
+      "1": "STORE_N",
+      "2": "GND"
+    },
+    "footprint": "Button_Switch_THT:SW_PUSH_6mm"
+  }
+}

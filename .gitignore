@@ -1,0 +1,9 @@
+# Hilfswerkzeuge und Build-Ausgaben auf allen Verzeichnisebenen
+tools/
+firmware/build/
+firmware/backups/
+
+# Lokale Metadaten und KiCad-Sitzungsdateien
+.DS_Store
+*.kicad_prl
+~*.lck

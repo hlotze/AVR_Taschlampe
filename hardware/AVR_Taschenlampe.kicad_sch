@@ -1,0 +1,2745 @@
+(kicad_sch (version 20250114) (generator "eeschema") (uuid 541d12f2-a6a4-4bb3-98f3-885597618807) (paper "A4")
+(title_block (title "AVR Taschenlampe / RGB PWM") (date "2026-11-17") (rev "1.1") (comment 1 "3 x AAA | ATtiny2313 | 3 Hardware-PWM-Kanaele"))
+(lib_symbols (symbol "Taschenlampe:Device__Battery"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "BT"
+			(at 3.302 3.302 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Device__Battery"
+			(at 3.302 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.0 1.9812 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0.0 1.9812 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Description" "Multiple-cell battery"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_keywords" "batt voltage-source cell"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(symbol "Device__Battery_0_1"
+			(rectangle
+				(start -2.9718 2.3114)
+				(end 2.9718 1.9812)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -2.9718 -1.651)
+				(end 2.9718 -1.9812)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -1.9812 1.3208)
+				(end 1.9812 0.6604)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -1.9812 -2.6416)
+				(end 1.9812 -3.302)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.0 2.3114) (xy 0.0 3.302)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.0 0.0) (xy 0.0 0.3302)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.0 -0.6604) (xy 0.0 -0.3302)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.0 -1.3208) (xy 0.0 -0.9906)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.9906 3.9624) (xy 2.3114 3.9624)
+				)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.651 4.6228) (xy 1.651 3.302)
+				)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Device__Battery_1_1"
+			(pin passive line
+				(at 0.0 6.35 270)
+				(length 3.048)
+				(name "+"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0.0 -6.35 90)
+				(length 3.048)
+				(name "-"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Taschenlampe:Switch__SW_Push"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.3208)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "SW"
+			(at 1.651 3.302 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Switch__SW_Push"
+			(at 0.0 -1.9812 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.0 6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0.0 6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(symbol "Switch__SW_Push_0_1"
+			(circle
+				(center -2.6416 0.0)
+				(radius 0.6604)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.0 1.651) (xy 0.0 3.9624)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.6416 0.0)
+				(radius 0.6604)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.302 1.651) (xy -3.302 1.651)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -6.35 0.0 0)
+				(length 3.048)
+				(name "1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0.0 180)
+				(length 3.048)
+				(name "2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Taschenlampe:Device__C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.3302)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Device__C"
+			(at 0.8255 3.302 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Device__C"
+			(at 0.8255 -3.302 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 1.25476 -4.953 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(symbol "Device__C_0_1"
+			(polyline
+				(pts
+					(xy -2.6416 0.9906) (xy 2.6416 0.9906)
+				)
+				(stroke
+					(width 0.6604)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.6416 -0.9906) (xy 2.6416 -0.9906)
+				)
+				(stroke
+					(width 0.6604)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Device__C_1_1"
+			(pin passive line
+				(at 0.0 5.08 270)
+				(length 3.7592)
+				(name ""
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0.0 -5.08 90)
+				(length 3.7592)
+				(name ""
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Taschenlampe:power__PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0.0 2.4765 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Value" "power__PWR_FLAG"
+			(at 0.0 4.953 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(symbol "power__PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0.0 0.0 90)
+				(length 0.0)
+				(name ""
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power__PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0.0 0.0) (xy 0.0 1.651) (xy -1.3208 2.4765) (xy 0.0 3.302) (xy 1.3208 2.4765) (xy 0.0 1.651)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Taschenlampe:MCU_Microchip_ATtiny__ATtiny2313V-10P"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -16.51 34.671 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "MCU_Microchip_ATtiny__ATtiny2313V-10P"
+			(at 3.302 -34.671 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2543-AVR-ATtiny2313_Datasheet.pdf"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Description" "10MHz, 2kB Flash, 128B SRAM, 128B EEPROM, debugWIRE, DIP-20"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_keywords" "AVR 8bit Microcontroller tinyAVR"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_fp_filters" "DIP*W7.62mm*"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(symbol "MCU_Microchip_ATtiny__ATtiny2313V-10P_0_1"
+			(rectangle
+				(start -16.51 -33.02)
+				(end 16.51 33.02)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "MCU_Microchip_ATtiny__ATtiny2313V-10P_1_1"
+			(pin bidirectional line
+				(at -20.32 26.67 0)
+				(length 3.81)
+				(name "PA2/~{RESET}"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 -3.81 180)
+				(length 3.81)
+				(name "PD0"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 -6.35 180)
+				(length 3.81)
+				(name "PD1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -20.32 12.7 0)
+				(length 3.81)
+				(name "PA1/XTAL2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -20.32 20.32 0)
+				(length 3.81)
+				(name "PA0/XTAL1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 -10.16 180)
+				(length 3.81)
+				(name "PD2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 -12.7 180)
+				(length 3.81)
+				(name "PD3"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 -16.51 180)
+				(length 3.81)
+				(name "PD4"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 -20.32 180)
+				(length 3.81)
+				(name "PD5"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0.0 -36.83 90)
+				(length 3.81)
+				(name "GND"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 -22.86 180)
+				(length 3.81)
+				(name "PD6"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 26.67 180)
+				(length 3.81)
+				(name "PB0"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 22.86 180)
+				(length 3.81)
+				(name "PB1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 20.32 180)
+				(length 3.81)
+				(name "PB2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 16.51 180)
+				(length 3.81)
+				(name "PB3"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 12.7 180)
+				(length 3.81)
+				(name "PB4"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 10.16 180)
+				(length 3.81)
+				(name "PB5"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 6.35 180)
+				(length 3.81)
+				(name "PB6"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 3.81 180)
+				(length 3.81)
+				(name "PB7"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0.0 36.83 270)
+				(length 3.81)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Taschenlampe:Device__R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Device__R"
+			(at 2.6416 0.0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Value" "Device__R"
+			(at 0.0 0.0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -2.3114 0.0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(symbol "Device__R_0_1"
+			(rectangle
+				(start -1.3208 -3.302)
+				(end 1.3208 3.302)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Device__R_1_1"
+			(pin passive line
+				(at 0.0 5.08 270)
+				(length 1.778)
+				(name ""
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0.0 -5.08 90)
+				(length 1.778)
+				(name ""
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Taschenlampe:Jumper__Jumper_2_Open"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "JP"
+			(at 0.0 3.6322 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Value" "Jumper__Jumper_2_Open"
+			(at 0.0 -2.9718 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, open"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_keywords" "Jumper SPST"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(symbol "Jumper__Jumper_2_Open_0_0"
+			(circle
+				(center -2.6416 0.0)
+				(radius 0.6604)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.6416 0.0)
+				(radius 0.6604)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Jumper__Jumper_2_Open_0_1"
+			(arc
+				(start -1.9812 1.651)
+				(mid 0.0 2.3114)
+				(end 1.9812 1.651)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Jumper__Jumper_2_Open_1_1"
+			(pin passive line
+				(at -6.35 0.0 0)
+				(length 3.048)
+				(name "A"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0.0 180)
+				(length 3.048)
+				(name "B"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Taschenlampe:Connector_Generic__Conn_02x03_Odd_Even"
+		(pin_names
+			(offset 1.3208)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 1.651 6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Value" "Connector_Generic__Conn_02x03_Odd_Even"
+			(at 1.651 -6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_2x??_*"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(symbol "Connector_Generic__Conn_02x03_Odd_Even_1_1"
+			(rectangle
+				(start -1.651 4.953)
+				(end 4.953 -4.953)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.651 3.4671)
+				(end 0.0 3.1369)
+				(stroke
+					(width 0.19812)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.651 0.1651)
+				(end 0.0 -0.1651)
+				(stroke
+					(width 0.19812)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.651 -3.1369)
+				(end 0.0 -3.4671)
+				(stroke
+					(width 0.19812)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 4.953 3.4671)
+				(end 3.302 3.1369)
+				(stroke
+					(width 0.19812)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 4.953 0.1651)
+				(end 3.302 -0.1651)
+				(stroke
+					(width 0.19812)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 4.953 -3.1369)
+				(end 3.302 -3.4671)
+				(stroke
+					(width 0.19812)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -6.35 3.81 0)
+				(length 4.699)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 3.81 180)
+				(length 5.207)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0.0 0)
+				(length 4.699)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 0.0 180)
+				(length 5.207)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -3.81 0)
+				(length 4.699)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 -3.81 180)
+				(length 5.207)
+				(name "Pin_6"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Taschenlampe:Device__LED_RAGB"
+		(pin_names
+			(offset 0.0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "D"
+			(at 0.0 12.2174 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Value" "Device__LED_RAGB"
+			(at 0.0 -11.557 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.0 -1.651 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0.0 -1.651 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Description" "RGB LED, red/anode/green/blue"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_keywords" "LED RGB diode"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(symbol "Device__LED_RAGB_0_0"
+			(text "R"
+				(at -2.4765 4.953 0)
+				(effects
+					(font
+						(size 1.651 1.651)
+					)
+				)
+			)
+			(text "G"
+				(at -2.4765 -1.651 0)
+				(effects
+					(font
+						(size 1.651 1.651)
+					)
+				)
+			)
+			(text "B"
+				(at -2.4765 -8.255 0)
+				(effects
+					(font
+						(size 1.651 1.651)
+					)
+				)
+			)
+		)
+		(symbol "Device__LED_RAGB_0_1"
+			(polyline
+				(pts
+					(xy -1.651 8.255) (xy -1.651 4.953)
+				)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 8.255) (xy -1.651 4.953) (xy -1.651 4.953)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 6.604) (xy -3.302 6.604)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 6.604) (xy 1.651 6.604)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 1.651) (xy -1.651 -1.651)
+				)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 1.651) (xy -1.651 -1.651) (xy -1.651 -1.651)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 0.0) (xy -3.302 0.0)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 -4.953) (xy -1.651 -8.255)
+				)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 -6.604) (xy -3.302 -6.604)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 -6.604) (xy 1.651 -6.604)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.3208 8.255) (xy 0.6604 10.2362) (xy -0.3302 10.2362) (xy 0.6604 10.2362) (xy 0.6604 9.2456)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.3208 1.651) (xy 0.6604 3.6322) (xy -0.3302 3.6322) (xy 0.6604 3.6322) (xy 0.6604 2.6416)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.3208 -4.953) (xy 0.6604 -2.9718) (xy -0.3302 -2.9718) (xy 0.6604 -2.9718) (xy 0.6604 -3.9624)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.0 8.255) (xy 1.9812 10.2362) (xy 0.9906 10.2362) (xy 1.9812 10.2362) (xy 1.9812 9.2456)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.0 1.651) (xy 1.9812 3.6322) (xy 0.9906 3.6322) (xy 1.9812 3.6322) (xy 1.9812 2.6416)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.0 -4.953) (xy 1.9812 -2.9718) (xy 0.9906 -2.9718) (xy 1.9812 -2.9718) (xy 1.9812 -3.9624)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.651 8.255) (xy 1.651 4.953) (xy -1.651 6.604) (xy 1.651 8.255)
+				)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 1.651 8.255)
+				(end 1.651 8.255)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 1.651 4.953)
+				(end 1.651 8.255)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.651 1.651) (xy 1.651 -1.651) (xy -1.651 0.0) (xy 1.651 1.651)
+				)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 1.651 1.651)
+				(end 1.651 1.651)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.651 0.0) (xy -1.651 0.0)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.651 0.0) (xy 3.302 0.0)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 1.651 -1.651)
+				(end 1.651 1.651)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.651 -4.953) (xy 1.651 -8.255) (xy -1.651 -6.604) (xy 1.651 -4.953)
+				)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.651 -6.604) (xy 2.6416 -6.604) (xy 2.6416 6.604) (xy 1.651 6.604)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.6416 0.0)
+				(radius 0.3302)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start 3.6322 10.8966)
+				(end -3.6322 -9.906)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "Device__LED_RAGB_1_1"
+			(pin passive line
+				(at -6.35 6.35 0)
+				(length 3.048)
+				(name "RK"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0.0 180)
+				(length 3.048)
+				(name "A"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0.0 0)
+				(length 3.048)
+				(name "GK"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -6.35 0)
+				(length 3.048)
+				(name "BK"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Taschenlampe:Transistor_BJT__Q_NPN_CBE"
+		(pin_names
+			(offset 0.0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Q"
+			(at 6.604 1.651 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Transistor_BJT__Q_NPN_CBE"
+			(at 6.604 -1.651 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 6.604 3.302 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Description" "NPN transistor, collector/base/emitter"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(property "ki_keywords" "BJT"
+			(at 0.0 0.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.651 1.651)
+				)
+			)
+		)
+		(symbol "Transistor_BJT__Q_NPN_CBE_0_1"
+			(polyline
+				(pts
+					(xy -3.302 0.0) (xy 0.8255 0.0)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.8255 2.4765) (xy 0.8255 -2.4765)
+				)
+				(stroke
+					(width 0.6604)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 1.651 0.0)
+				(radius 3.66522)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Transistor_BJT__Q_NPN_CBE_1_1"
+			(polyline
+				(pts
+					(xy 0.8255 0.8255) (xy 3.302 3.302)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.8255 -0.8255) (xy 3.302 -3.302)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.651 -2.3114) (xy 2.3114 -1.651) (xy 2.9718 -2.9718) (xy 1.651 -2.3114)
+				)
+				(stroke
+					(width 0.0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(pin passive line
+				(at 3.81 6.35 270)
+				(length 3.048)
+				(name "C"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -6.35 0.0 0)
+				(length 3.048)
+				(name "B"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 -6.35 90)
+				(length 3.048)
+				(name "E"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.651 1.651)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	))
+(text "VERSORGUNG / ON" (at 20 17 0) (effects (font (size 2.08 2.08)) (justify left top)) (uuid a238eab0-abf3-41fa-998e-dc4d5085e807))
+(symbol (lib_id "Taschenlampe:Device__Battery") (at 27.94 38.1 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 10559e4a-47da-45fd-81cd-e965e62257a3)
+ (property "Reference" "BT1" (at 48.74 35.5 0) (effects (font (size 1.3 1.3)) )) (property "Value" "3 x AAA / 4.5 V" (at 48.74 38.1 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "" (at 27.94 38.1 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "BT1") (unit 1)))))
+(wire (pts (xy 27.94 31.75) (xy 27.94 26.67)) (stroke (width 0) (type default)) (uuid 81556bd1-fcfa-44b4-8232-9a4034463b59))
+(label "VBAT" (at 27.94 26.67 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 8c8b5e46-8664-4d8d-8ace-a9eeddd3e20c))
+(wire (pts (xy 27.94 44.45) (xy 27.94 49.53)) (stroke (width 0) (type default)) (uuid 54508fc6-2061-4cb5-9e87-75e8b1c0d304))
+(label "GND" (at 27.94 49.53 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 61869dd8-ad35-4819-9286-17bf55388c18))
+(symbol (lib_id "Taschenlampe:Switch__SW_Push") (at 62.23 30.48 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid a9c76007-fe8d-4683-9aaf-81ca819a6115)
+ (property "Reference" "SW1" (at 62.23 21.380000000000003 0) (effects (font (size 1.3 1.3)) )) (property "Value" "ON" (at 62.23 23.98 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 62.23 30.48 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "SW1") (unit 1)))))
+(wire (pts (xy 55.88 30.48) (xy 50.8 30.48)) (stroke (width 0) (type default)) (uuid 8b56b31a-bb6e-4fa9-b985-4e1e21e86d51))
+(label "VBAT" (at 50.8 30.48 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid c45fdd53-63c5-4456-bda6-c343d24fa83b))
+(wire (pts (xy 68.58 30.48) (xy 73.66 30.48)) (stroke (width 0) (type default)) (uuid 47a23e9e-abb6-4931-bcf5-f00d69f6acec))
+(label "VCC_SW" (at 73.66 30.48 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 6860fccc-9761-4e56-83c7-bcf390b53213))
+(symbol (lib_id "Taschenlampe:Device__C") (at 87.63 39.37 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 8011a621-c0d7-4c27-9264-c030c777d713)
+ (property "Reference" "C1" (at 98.03 36.769999999999996 0) (effects (font (size 1.3 1.3)) )) (property "Value" "100n" (at 98.03 39.37 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 87.63 39.37 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "C1") (unit 1)))))
+(wire (pts (xy 87.63 34.29) (xy 87.63 29.21)) (stroke (width 0) (type default)) (uuid c14994be-047b-4767-971b-4f97b66b4836))
+(label "VCC_SW" (at 87.63 29.21 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 6a71ff21-838d-49ff-9092-7a8eb3d77182))
+(wire (pts (xy 87.63 44.45) (xy 87.63 49.53)) (stroke (width 0) (type default)) (uuid 2065b594-cfce-4f4e-835c-adcd93d4a016))
+(label "GND" (at 87.63 49.53 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 382501d8-2ca5-4b39-a190-35256ea3ee29))
+(symbol (lib_id "Taschenlampe:Device__C") (at 107.95 39.37 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 129bb5f7-c4a1-4e46-b81a-6d2be7ba68aa)
+ (property "Reference" "C2" (at 118.35000000000001 36.769999999999996 0) (effects (font (size 1.3 1.3)) )) (property "Value" "1u" (at 118.35000000000001 39.37 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 107.95 39.37 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "C2") (unit 1)))))
+(wire (pts (xy 107.95 34.29) (xy 107.95 29.21)) (stroke (width 0) (type default)) (uuid b2e5407a-f09b-4592-93e8-7b3ee0b35252))
+(label "VCC_SW" (at 107.95 29.21 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 7b30166e-cbf8-4f22-81ae-fded739eb163))
+(wire (pts (xy 107.95 44.45) (xy 107.95 49.53)) (stroke (width 0) (type default)) (uuid 1214ff74-ad38-4aae-95c4-5e40d8dff74b))
+(label "GND" (at 107.95 49.53 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 3b5d8bdf-8f7e-41f0-a4c1-8c46ebb3bdef))
+(symbol (lib_id "Taschenlampe:power__PWR_FLAG") (at 73.66 41.91 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid e9abd15e-f7fd-4acf-8071-e05f4926e63b)
+ (property "Reference" "#FLG001" (at 84.06 39.309999999999995 0) (effects (font (size 1.3 1.3)) (hide yes))) (property "Value" "PWR_FLAG" (at 84.06 41.91 0) (effects (font (size 1.3 1.3)) (hide yes))) (property "Footprint" "" (at 73.66 41.91 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "#FLG001") (unit 1)))))
+(wire (pts (xy 73.66 41.91) (xy 68.58 41.91)) (stroke (width 0) (type default)) (uuid 6e9ac9c7-c1c1-4bd3-a569-26d26968559c))
+(label "VCC_SW" (at 68.58 41.91 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 0d019f07-3360-4584-bb8e-7964bd67aaae))
+(symbol (lib_id "Taschenlampe:power__PWR_FLAG") (at 73.66 52.07 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid ac30b30b-0f64-47c2-99ec-8175d042361c)
+ (property "Reference" "#FLG002" (at 84.06 49.47 0) (effects (font (size 1.3 1.3)) (hide yes))) (property "Value" "PWR_FLAG" (at 84.06 52.07 0) (effects (font (size 1.3 1.3)) (hide yes))) (property "Footprint" "" (at 73.66 52.07 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "#FLG002") (unit 1)))))
+(wire (pts (xy 73.66 52.07) (xy 68.58 52.07)) (stroke (width 0) (type default)) (uuid 0c4ff55c-d9ee-4c3e-b9e4-9fc85bf3b24d))
+(label "GND" (at 68.58 52.07 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 0d30dcc3-d9cd-47ed-a00f-bbb9ab47d7c8))
+(text "C1 direkt an U1 (Pins 20 / 10).\nKeine Fremdversorgung ueber ISP." (at 20 53 0) (effects (font (size 1.3 1.3)) (justify left top)) (uuid ce78038a-33c0-40a9-8967-9caaaddb798e))
+(text "ATtiny2313 / PWM" (at 20 60 0) (effects (font (size 2.08 2.08)) (justify left top)) (uuid 24f4b82b-4db4-4eb3-95d4-06038a1c978c))
+(symbol (lib_id "Taschenlampe:MCU_Microchip_ATtiny__ATtiny2313V-10P") (at 74.93 104.14 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid f7aa7564-22a7-4150-b211-426f3077e4c6)
+ (property "Reference" "U1" (at 67.93 61.24 0) (effects (font (size 1.3 1.3)) )) (property "Value" "ATtiny2313-20PU" (at 67.93 64.49000000000001 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Package_DIP:DIP-20_W7.62mm" (at 74.93 104.14 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "U1") (unit 1)))))
+(wire (pts (xy 54.61 77.47) (xy 49.53 77.47)) (stroke (width 0) (type default)) (uuid b5bfda90-257a-4ed2-8de2-14b6ef943c03))
+(label "RESET_N" (at 49.53 77.47 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 35f2ee85-5ae6-4b70-a81d-2aa1c8724bea))
+(wire (pts (xy 95.25 107.95) (xy 100.33 107.95)) (stroke (width 0) (type default)) (uuid 8b9a648e-ada4-42b2-a1e1-ad1766770566))
+(label "INC_RT_N" (at 100.33 107.95 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 3ca3572c-d6f3-4f91-9448-9809629b967c))
+(wire (pts (xy 95.25 110.49) (xy 100.33 110.49)) (stroke (width 0) (type default)) (uuid e10e0149-87e0-4cba-820e-c4ae9b2c836e))
+(label "DEC_RT_N" (at 100.33 110.49 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid a587000e-8f59-48a4-9154-893888f2f665))
+(wire (pts (xy 95.25 114.3) (xy 100.33 114.3)) (stroke (width 0) (type default)) (uuid 4b857bfc-817b-4aab-a3fa-054f8b0d2387))
+(label "INC_GN_N" (at 100.33 114.3 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 7101461f-c9ee-4370-b316-4eb68ff5e902))
+(wire (pts (xy 95.25 116.84) (xy 100.33 116.84)) (stroke (width 0) (type default)) (uuid d8f92af4-0d0b-4be5-bb1a-76e989506609))
+(label "DEC_GN_N" (at 100.33 116.84 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid e3ab8f07-e0e3-4685-aa75-3ba210bb8297))
+(wire (pts (xy 95.25 120.65) (xy 100.33 120.65)) (stroke (width 0) (type default)) (uuid 446cab2c-db7c-4f84-8428-01f23fbc37c3))
+(label "INC_BL_N" (at 100.33 120.65 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 25253e54-2077-41df-86b4-19968f424e08))
+(wire (pts (xy 95.25 124.46) (xy 100.33 124.46)) (stroke (width 0) (type default)) (uuid 1b2e5936-c50c-4715-a162-2f1f4cbf02b5))
+(label "DEC_BL_N" (at 100.33 124.46 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 9672bb45-7e03-41a3-b439-303e90caa482))
+(wire (pts (xy 74.93 140.97) (xy 74.93 146.05)) (stroke (width 0) (type default)) (uuid 5b14d6c1-0b7b-4723-9ec4-b4809cab54be))
+(label "GND" (at 74.93 146.05 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid f0feb35a-3b27-47c5-aac7-a1f8fbbaed7d))
+(wire (pts (xy 95.25 127.0) (xy 100.33 127.0)) (stroke (width 0) (type default)) (uuid 0ad0fc3f-ec14-4df4-b2da-4da22fbec2f1))
+(label "STORE_N" (at 100.33 127.0 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 65411494-b1cc-4bee-8701-90c58d4668c5))
+(wire (pts (xy 95.25 77.47) (xy 100.33 77.47)) (stroke (width 0) (type default)) (uuid 5cee42b6-09bc-4f91-b4f6-c8eb42c8c47a))
+(label "SOLO_N" (at 100.33 77.47 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid f2e19d3d-f5a2-4729-a0de-ca9b43ccea33))
+(wire (pts (xy 95.25 83.82) (xy 100.33 83.82)) (stroke (width 0) (type default)) (uuid 67e6152a-35c9-4185-a2c8-3c4957b7b63a))
+(label "PWM_RT" (at 100.33 83.82 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid ea1cc588-891c-4263-b652-00306cd4f07e))
+(wire (pts (xy 95.25 87.63) (xy 100.33 87.63)) (stroke (width 0) (type default)) (uuid 07b45f85-fa00-42b4-b378-fb73be444082))
+(label "PWM_GN" (at 100.33 87.63 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 2e841643-393f-4a32-b5e2-a3dfc3865fe1))
+(wire (pts (xy 95.25 91.44) (xy 100.33 91.44)) (stroke (width 0) (type default)) (uuid ed5bea78-56ed-4cf2-a7b6-a658d7ac3bcf))
+(label "PWM_BL" (at 100.33 91.44 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 8b404c95-9645-4202-a9db-15b72a475d79))
+(wire (pts (xy 95.25 93.98) (xy 100.33 93.98)) (stroke (width 0) (type default)) (uuid 7014c5ec-2584-4700-b5bc-0e41837a370b))
+(label "MOSI" (at 100.33 93.98 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid e2529334-49cc-41cf-84ea-b99fa120c4a1))
+(wire (pts (xy 95.25 97.79) (xy 100.33 97.79)) (stroke (width 0) (type default)) (uuid 74e6f10e-ff8c-4542-92b6-16c4484f5eb0))
+(label "MISO" (at 100.33 97.79 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 45e60df2-061f-44a6-b25d-999ec43b98fc))
+(wire (pts (xy 95.25 100.33) (xy 100.33 100.33)) (stroke (width 0) (type default)) (uuid b5f920ac-9914-409b-931a-ab6d1c69a1e0))
+(label "SCK" (at 100.33 100.33 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 6cf2138b-5e08-49b9-b281-84cd45183be5))
+(wire (pts (xy 74.93 67.31) (xy 74.93 62.23)) (stroke (width 0) (type default)) (uuid 2be05a30-096e-4ab2-829a-9c6156cb07c7))
+(label "VCC_SW" (at 74.93 62.23 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid fece641d-27d4-4bed-9f6e-90c656d49654))
+(no_connect (at 54.61 91.44) (uuid 2583c635-0506-4064-98af-41f53a9e0f1f))
+(no_connect (at 54.61 83.82) (uuid 9926c2e8-9c16-46ec-bd80-4091a636ac47))
+(no_connect (at 95.25 81.28) (uuid 94b02409-574d-4509-9b84-fa165fcf1234))
+(symbol (lib_id "Taschenlampe:Device__R") (at 39.37 91.44 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 8f1c57ab-4910-4162-af88-94cdcdd5dc47)
+ (property "Reference" "R1" (at 44.57 88.84 0) (effects (font (size 1.3 1.3)) )) (property "Value" "10k" (at 44.57 91.44 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 39.37 91.44 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "R1") (unit 1)))))
+(wire (pts (xy 39.37 86.36) (xy 39.37 81.28)) (stroke (width 0) (type default)) (uuid 5bff125c-5beb-4af0-9a93-3c9602064e6c))
+(label "VCC_SW" (at 39.37 81.28 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 441cd6f1-6cc4-4ee0-b6b2-4a6cf6018ac8))
+(wire (pts (xy 39.37 96.52) (xy 39.37 101.6)) (stroke (width 0) (type default)) (uuid 26345e8f-c9d7-4526-9a83-d8eb5fb55cf2))
+(label "RESET_N" (at 39.37 101.6 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 3534bcc9-427c-472f-9315-2889002de913))
+(symbol (lib_id "Taschenlampe:Jumper__Jumper_2_Open") (at 127.0 83.82 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 0764ad54-1020-4124-abab-b78770642344)
+ (property "Reference" "JP1" (at 127.0 74.72 0) (effects (font (size 1.3 1.3)) )) (property "Value" "SOLO" (at 127.0 77.32 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 127.0 83.82 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "JP1") (unit 1)))))
+(wire (pts (xy 120.65 83.82) (xy 115.57 83.82)) (stroke (width 0) (type default)) (uuid 7354c180-92bb-4ae0-8550-7781f4ddd86b))
+(label "SOLO_N" (at 115.57 83.82 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 7afe0b89-b552-4396-bcf6-d5d705f6a0a7))
+(wire (pts (xy 133.35 83.82) (xy 138.43 83.82)) (stroke (width 0) (type default)) (uuid 4326619d-5ee2-416e-ad19-cdcea53d8536))
+(label "GND" (at 138.43 83.82 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 442e1741-a3cc-44db-ae16-534ee445c5f8))
+(text "JP1 offen: Mischung.\nJP1 zu: Einstellfarbe(n).\nPB0: interner Pull-up." (at 114 113 0) (effects (font (size 1.3 1.3)) (justify left top)) (uuid 76b3ac6d-3c17-4292-92d4-e15dd1cd0508))
+(text "Interner RC: 1 MHz; BOD: 2.7 V.\nPWM: PB2/OC0A, PB3/OC1A, PB4/OC1B.\nTaster: interne Pull-ups; aktiv LOW.\nEntprellung und EEPROM-Integritaet: Firmware." (at 20 175 0) (effects (font (size 1.3 1.3)) (justify left top)) (uuid 6ab1689b-206a-4cdb-a992-e39974f0fc4e))
+(text "ISP / AVR 6-POLIG" (at 124 17 0) (effects (font (size 2.08 2.08)) (justify left top)) (uuid e530d793-0f8b-43bf-8062-a176fd544a78))
+(symbol (lib_id "Taschenlampe:Connector_Generic__Conn_02x03_Odd_Even") (at 137.16 36.83 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 4b2b4f49-0978-4469-a310-3c8a40feb236)
+ (property "Reference" "J1" (at 137.16 27.729999999999997 0) (effects (font (size 1.3 1.3)) )) (property "Value" "AVR ISP" (at 137.16 30.33 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" (at 137.16 36.83 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "J1") (unit 1)))))
+(wire (pts (xy 130.81 33.02) (xy 125.73 33.02)) (stroke (width 0) (type default)) (uuid 3088bc27-fb5a-472e-a120-eed507942da6))
+(label "MISO" (at 125.73 33.02 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid d197b272-2323-45a2-af5d-96534c8bd7b7))
+(wire (pts (xy 147.32 33.02) (xy 152.4 33.02)) (stroke (width 0) (type default)) (uuid b727b2de-84fe-4ffe-af04-0e6dd6f222a9))
+(label "VCC_SW" (at 152.4 33.02 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 8538ff2a-2361-43c5-8d6d-db6e033bde0d))
+(wire (pts (xy 130.81 36.83) (xy 125.73 36.83)) (stroke (width 0) (type default)) (uuid e5b5222f-523f-49f6-9234-0bc375f36211))
+(label "SCK" (at 125.73 36.83 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 3abd80b9-d03c-4597-b75d-c6f0f75a516d))
+(wire (pts (xy 147.32 36.83) (xy 152.4 36.83)) (stroke (width 0) (type default)) (uuid 6a12424f-ffe5-4161-b2a8-fc89cb9d6fa1))
+(label "MOSI" (at 152.4 36.83 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 88456608-afde-40e4-ab4e-50732f89586a))
+(wire (pts (xy 130.81 40.64) (xy 125.73 40.64)) (stroke (width 0) (type default)) (uuid 7e46a3f6-32ed-4c9c-a4f8-d6c0abe19b64))
+(label "RESET_N" (at 125.73 40.64 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 9006bba7-08c4-497a-9967-da02ab3fd63e))
+(wire (pts (xy 147.32 40.64) (xy 152.4 40.64)) (stroke (width 0) (type default)) (uuid 1d76b3c1-30ed-4d1d-a045-8b4e294ee5fb))
+(label "GND" (at 152.4 40.64 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 4d481492-cdec-4819-9701-1568d4559fed))
+(text "ON beim Programmieren halten.\nVCC_SW = Zielspannungsreferenz.\nProgrammer speist die Schaltung nicht." (at 124 49 0) (effects (font (size 1.3 1.3)) (justify left top)) (uuid 858e2ef7-8f1f-4ea6-8e0a-e10c88c81edd))
+(text "RGB-LED / STROMTREIBER" (at 178 17 0) (effects (font (size 2.08 2.08)) (justify left top)) (uuid bd85b28d-adac-426a-8b1a-df6c63182a53))
+(symbol (lib_id "Taschenlampe:Device__LED_RAGB") (at 223.52 39.37 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid eacb3237-c62c-4918-a37e-2481905f293a)
+ (property "Reference" "D1" (at 245.52 49.769999999999996 0) (effects (font (size 1.3 1.3)) )) (property "Value" "RGB / Common Anode" (at 245.52 53.67 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "" (at 223.52 39.37 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "D1") (unit 1)))))
+(wire (pts (xy 217.17 33.02) (xy 212.09 33.02)) (stroke (width 0) (type default)) (uuid 61e6d782-55d1-47ce-a2a3-ef02379e8ec1))
+(label "K_RT" (at 212.09 33.02 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 336ce310-ee34-41f8-bb49-9c9aca68f704))
+(wire (pts (xy 229.87 39.37) (xy 234.95 39.37)) (stroke (width 0) (type default)) (uuid fae30a1b-65f0-453a-b349-a17d69b951c1))
+(label "VCC_SW" (at 234.95 39.37 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 4c3fa68b-7892-46bc-9392-9fbc23140f57))
+(wire (pts (xy 217.17 39.37) (xy 212.09 39.37)) (stroke (width 0) (type default)) (uuid a4607379-5708-4bd9-9d39-4ab242bf47be))
+(label "K_GN" (at 212.09 39.37 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 62af9429-74a1-41be-a7fe-4ec60d67cbf7))
+(wire (pts (xy 217.17 45.72) (xy 212.09 45.72)) (stroke (width 0) (type default)) (uuid 6442b183-c705-4a33-8e30-d4c4d07fb345))
+(label "K_BL" (at 212.09 45.72 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid c74b47a1-1bee-4a3b-9ecb-3ddf6b0e24fb))
+(symbol (lib_id "Taschenlampe:Transistor_BJT__Q_NPN_CBE") (at 175.26 97.79 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid e03c98bb-c60f-4234-9d84-780d0b3021b1)
+ (property "Reference" "Q1" (at 182.26 87.79 0) (effects (font (size 1.3 1.3)) )) (property "Value" "BC547B" (at 182.26 90.39 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Package_TO_SOT_THT:TO-92_Inline" (at 175.26 97.79 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "Q1") (unit 1)))))
+(symbol (lib_id "Taschenlampe:Device__R") (at 179.07 73.66 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 4909f9bc-6162-483a-bf96-851494399797)
+ (property "Reference" "R2" (at 184.26999999999998 71.06 0) (effects (font (size 1.3 1.3)) )) (property "Value" "330R" (at 184.26999999999998 73.66 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 179.07 73.66 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "R2") (unit 1)))))
+(wire (pts (xy 179.07 68.58) (xy 179.07 63.5)) (stroke (width 0) (type default)) (uuid 35fcac25-39bb-4805-87e4-12582a4ed61d))
+(label "K_RT" (at 179.07 63.5 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid b2d7fbd4-cf9d-4100-884b-8e127bc6b017))
+(wire (pts (xy 179.07 78.74) (xy 179.07 91.44)) (stroke (width 0) (type default)) (uuid b34eade9-8d10-4cbf-b2d8-0bfa0c4c06b5))
+(label "C_RT" (at 179.07 78.74 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid f5f93467-430e-4530-ab28-9a2ceeb0d637))
+(symbol (lib_id "Taschenlampe:Device__R") (at 151.13 97.79 90) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid b86506a5-00f1-4f30-ad21-2fbb0ff1fdff)
+ (property "Reference" "R5" (at 151.13 89.79 90) (effects (font (size 1.3 1.3)) )) (property "Value" "1k" (at 151.13 92.79 90) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 151.13 97.79 90) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "R5") (unit 1)))))
+(wire (pts (xy 146.05 97.79) (xy 140.97 97.79)) (stroke (width 0) (type default)) (uuid 4a6e2ecc-41a9-490f-b390-39bf7dfc62be))
+(label "PWM_RT" (at 140.97 97.79 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid fa810c9a-8133-4d97-9015-f2cf8485b869))
+(wire (pts (xy 156.21 97.79) (xy 163.83 97.79)) (stroke (width 0) (type default)) (uuid 9cef4148-e9f5-4c36-b1ba-fdec37c39a52))
+(wire (pts (xy 163.83 97.79) (xy 168.91 97.79)) (stroke (width 0) (type default)) (uuid 2ad9daaf-c744-4673-83f3-fe6bdd51ba69))
+(label "B_RT" (at 163.83 97.79 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 700d75d2-65fe-44ca-af56-2f283ffafb9c))
+(symbol (lib_id "Taschenlampe:Device__R") (at 163.83 115.57 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid a84977de-870e-48d1-b85d-14a9368e6b52)
+ (property "Reference" "R8" (at 169.03 112.97 0) (effects (font (size 1.3 1.3)) )) (property "Value" "100k" (at 169.03 115.57 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 163.83 115.57 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "R8") (unit 1)))))
+(wire (pts (xy 163.83 97.79) (xy 163.83 110.49)) (stroke (width 0) (type default)) (uuid b05429ef-2099-4896-a31b-61f42eac725c))
+(junction (at 163.83 97.79) (diameter 0) (color 0 0 0 0) (uuid b0713a35-9aa2-4f2e-beb2-67632e8a0b15))
+(wire (pts (xy 163.83 120.65) (xy 163.83 127.0)) (stroke (width 0) (type default)) (uuid eb7a449b-3269-435f-ac2c-02016cd39b89))
+(wire (pts (xy 179.07 104.14) (xy 179.07 127.0)) (stroke (width 0) (type default)) (uuid 8306594c-8338-48d7-a6e2-63150f27d214))
+(wire (pts (xy 163.83 127.0) (xy 179.07 127.0)) (stroke (width 0) (type default)) (uuid 15ec71c5-b382-45ad-8174-f955849042d8))
+(label "GND" (at 179.07 127.0 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid c78adb9f-176a-4d3b-863b-a0d2a2c56241))
+(symbol (lib_id "Taschenlampe:Transistor_BJT__Q_NPN_CBE") (at 219.71 97.79 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 7501a73c-80e7-4d0e-ad3c-0135d6110503)
+ (property "Reference" "Q2" (at 226.71 87.79 0) (effects (font (size 1.3 1.3)) )) (property "Value" "BC547B" (at 226.71 90.39 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Package_TO_SOT_THT:TO-92_Inline" (at 219.71 97.79 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "Q2") (unit 1)))))
+(symbol (lib_id "Taschenlampe:Device__R") (at 223.52 73.66 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 7ebb4f2b-0e6f-41eb-b727-21d098886d0a)
+ (property "Reference" "R3" (at 228.72 71.06 0) (effects (font (size 1.3 1.3)) )) (property "Value" "330R" (at 228.72 73.66 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 223.52 73.66 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "R3") (unit 1)))))
+(wire (pts (xy 223.52 68.58) (xy 223.52 63.5)) (stroke (width 0) (type default)) (uuid f7bbbb00-8309-4f61-b4b9-5aa070fbef78))
+(label "K_GN" (at 223.52 63.5 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid d4844b51-90f8-4ced-abf2-4c6263e77bd8))
+(wire (pts (xy 223.52 78.74) (xy 223.52 91.44)) (stroke (width 0) (type default)) (uuid 54da85b0-15b2-4ebe-b4cd-376629da333d))
+(label "C_GN" (at 223.52 78.74 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid ea89d47e-62fb-475f-9579-8755b19aaaad))
+(symbol (lib_id "Taschenlampe:Device__R") (at 195.58 97.79 90) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 61293120-f29a-4d69-aea3-4722a2108865)
+ (property "Reference" "R6" (at 195.58 89.79 90) (effects (font (size 1.3 1.3)) )) (property "Value" "1k" (at 195.58 92.79 90) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 195.58 97.79 90) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "R6") (unit 1)))))
+(wire (pts (xy 190.5 97.79) (xy 185.42 97.79)) (stroke (width 0) (type default)) (uuid 34fabdd1-1ea4-4dbc-b025-df1dbaac509c))
+(label "PWM_GN" (at 185.42 97.79 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid d9d47e81-9298-4395-9b83-2cff5cf3679d))
+(wire (pts (xy 200.66 97.79) (xy 208.28 97.79)) (stroke (width 0) (type default)) (uuid 0fa31e43-3351-47be-997d-4bcd7b634d9b))
+(wire (pts (xy 208.28 97.79) (xy 213.36 97.79)) (stroke (width 0) (type default)) (uuid e5652cc6-996e-4cbc-8941-31afed47173f))
+(label "B_GN" (at 208.28 97.79 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 6a4fb1e1-43c1-4d64-a2d4-8215f1be88a8))
+(symbol (lib_id "Taschenlampe:Device__R") (at 208.28 115.57 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid d444f394-27e5-4a8f-88b5-0c03b1ba8759)
+ (property "Reference" "R9" (at 213.48 112.97 0) (effects (font (size 1.3 1.3)) )) (property "Value" "100k" (at 213.48 115.57 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 208.28 115.57 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "R9") (unit 1)))))
+(wire (pts (xy 208.28 97.79) (xy 208.28 110.49)) (stroke (width 0) (type default)) (uuid c8bed670-6cf1-4e1d-8029-ded43861857c))
+(junction (at 208.28 97.79) (diameter 0) (color 0 0 0 0) (uuid eff15511-c818-4274-bcfe-a8a0ef5a7a54))
+(wire (pts (xy 208.28 120.65) (xy 208.28 127.0)) (stroke (width 0) (type default)) (uuid 26017836-5d52-408e-9cb2-0c8055274c4c))
+(wire (pts (xy 223.52 104.14) (xy 223.52 127.0)) (stroke (width 0) (type default)) (uuid c4b59663-1393-40b4-b60b-e1f9c77f7c5a))
+(wire (pts (xy 208.28 127.0) (xy 223.52 127.0)) (stroke (width 0) (type default)) (uuid a640832c-c81d-4ff0-8e9f-67d739618b57))
+(label "GND" (at 223.52 127.0 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 53b63c3a-41c4-4d85-9e9e-2dafdb10f34a))
+(symbol (lib_id "Taschenlampe:Transistor_BJT__Q_NPN_CBE") (at 264.16 97.79 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 9e3e7731-a546-43df-94da-1d78337342f6)
+ (property "Reference" "Q3" (at 271.16 87.79 0) (effects (font (size 1.3 1.3)) )) (property "Value" "BC547B" (at 271.16 90.39 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Package_TO_SOT_THT:TO-92_Inline" (at 264.16 97.79 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "Q3") (unit 1)))))
+(symbol (lib_id "Taschenlampe:Device__R") (at 267.97 73.66 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid b77efab4-690f-49aa-bd3d-847e7246a3f3)
+ (property "Reference" "R4" (at 273.17 71.06 0) (effects (font (size 1.3 1.3)) )) (property "Value" "330R" (at 273.17 73.66 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 267.97 73.66 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "R4") (unit 1)))))
+(wire (pts (xy 267.97 68.58) (xy 267.97 63.5)) (stroke (width 0) (type default)) (uuid 450ede1a-01ae-4367-9f15-54be04365974))
+(label "K_BL" (at 267.97 63.5 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 379d3b53-cd02-4a2b-add0-1ff77be3fbe2))
+(wire (pts (xy 267.97 78.74) (xy 267.97 91.44)) (stroke (width 0) (type default)) (uuid ae90227b-5684-439f-bef0-2624102c5628))
+(label "C_BL" (at 267.97 78.74 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 1668198a-b984-4564-88a2-aca6cc31067a))
+(symbol (lib_id "Taschenlampe:Device__R") (at 240.03 97.79 90) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 8f11aba0-896b-45e4-b277-0f09f58fc803)
+ (property "Reference" "R7" (at 240.03 89.79 90) (effects (font (size 1.3 1.3)) )) (property "Value" "1k" (at 240.03 92.79 90) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 240.03 97.79 90) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "R7") (unit 1)))))
+(wire (pts (xy 234.95 97.79) (xy 229.87 97.79)) (stroke (width 0) (type default)) (uuid 6071b71e-0dba-4b20-862a-6765fc19dd53))
+(label "PWM_BL" (at 229.87 97.79 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid de8157a0-0467-4ca8-9690-4b915076a6f9))
+(wire (pts (xy 245.11 97.79) (xy 252.73 97.79)) (stroke (width 0) (type default)) (uuid 3e19d8d7-d9e8-4c01-96f0-04cc160c8705))
+(wire (pts (xy 252.73 97.79) (xy 257.81 97.79)) (stroke (width 0) (type default)) (uuid 6bfefbf2-6130-4cef-8be5-7c19612b28b7))
+(label "B_BL" (at 252.73 97.79 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid bd94a298-9d78-480f-95a1-1e7a742b27ab))
+(symbol (lib_id "Taschenlampe:Device__R") (at 252.73 115.57 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid dd1a0ab1-e12f-43ca-beaa-c01ed14dce6f)
+ (property "Reference" "R10" (at 257.93 112.97 0) (effects (font (size 1.3 1.3)) )) (property "Value" "100k" (at 257.93 115.57 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 252.73 115.57 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "R10") (unit 1)))))
+(wire (pts (xy 252.73 97.79) (xy 252.73 110.49)) (stroke (width 0) (type default)) (uuid d6fd6266-6088-4137-9423-3229fcc82b8b))
+(junction (at 252.73 97.79) (diameter 0) (color 0 0 0 0) (uuid 53bc92a3-c93d-4265-8641-70edb7b38475))
+(wire (pts (xy 252.73 120.65) (xy 252.73 127.0)) (stroke (width 0) (type default)) (uuid 180dedaf-9328-4287-9260-dd3d9359e74e))
+(wire (pts (xy 267.97 104.14) (xy 267.97 127.0)) (stroke (width 0) (type default)) (uuid 2d06493b-d9db-4931-bc2a-4470bbd882f2))
+(wire (pts (xy 252.73 127.0) (xy 267.97 127.0)) (stroke (width 0) (type default)) (uuid 0fcf9a1e-9de0-4ce9-b88b-8a0d9c2c0951))
+(label "GND" (at 267.97 127.0 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid dc7bfc50-d5d3-4c89-9758-a12f7ea150f4))
+(text "R2-R4: konservative Startwerte fuer kleine RGB-LED.\nLED-Typ, Pinfolge und Stroeme vor Bestueckung pruefen.\nR8-R10 halten Q1-Q3 beim Reset AUS. PWM aktiv HIGH." (at 174 134 0) (effects (font (size 1.3 1.3)) (justify left top)) (uuid ed0ccb84-ae10-4812-81c1-ba34bc9a3b7e))
+(text "BEDIENTASTER / AKTIV LOW" (at 20 141 0) (effects (font (size 2.08 2.08)) (justify left top)) (uuid d6ecad99-172e-481b-8f72-8b9525f8ad15))
+(symbol (lib_id "Taschenlampe:Switch__SW_Push") (at 27.94 154.94 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid f50789e6-bd0c-4594-8e94-1583a99f8358)
+ (property "Reference" "SW2" (at 27.94 145.84 0) (effects (font (size 1.3 1.3)) )) (property "Value" "INC_rt" (at 27.94 148.44 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 27.94 154.94 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "SW2") (unit 1)))))
+(wire (pts (xy 21.59 154.94) (xy 16.51 154.94)) (stroke (width 0) (type default)) (uuid a43cfad4-e3c9-4da2-914f-aaeb7e43d841))
+(label "INC_RT_N" (at 16.51 154.94 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 1c695f14-10bb-47a7-a9bb-4c33915808f6))
+(wire (pts (xy 34.29 154.94) (xy 34.29 160.02)) (stroke (width 0) (type default)) (uuid 28a72f90-d956-40ae-b319-0a6f9b081b86))
+(label "GND" (at 34.29 160.02 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 9de52b01-562a-48c2-8c30-1501a9474740))
+(symbol (lib_id "Taschenlampe:Switch__SW_Push") (at 63.5 154.94 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 31ea5f42-d622-405e-967d-783b21481bb7)
+ (property "Reference" "SW3" (at 63.5 145.84 0) (effects (font (size 1.3 1.3)) )) (property "Value" "DEC_rt" (at 63.5 148.44 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 63.5 154.94 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "SW3") (unit 1)))))
+(wire (pts (xy 57.15 154.94) (xy 52.07 154.94)) (stroke (width 0) (type default)) (uuid ea1a4f07-c6ea-4878-838e-21ae332fcfa0))
+(label "DEC_RT_N" (at 52.07 154.94 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid a6f1ac81-6088-4e3d-b2e7-8f7d4dadbe6d))
+(wire (pts (xy 69.85 154.94) (xy 69.85 160.02)) (stroke (width 0) (type default)) (uuid 13b8e8da-ae47-4689-a0e2-3a6eee92fc6c))
+(label "GND" (at 69.85 160.02 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 61a5c98a-8aa1-46b1-837a-a4e95b76dce3))
+(symbol (lib_id "Taschenlampe:Switch__SW_Push") (at 100.33 154.94 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 671d82ba-c6e7-41cd-8268-e4f445d8efe2)
+ (property "Reference" "SW4" (at 100.33 145.84 0) (effects (font (size 1.3 1.3)) )) (property "Value" "INC_gn" (at 100.33 148.44 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 100.33 154.94 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "SW4") (unit 1)))))
+(wire (pts (xy 93.98 154.94) (xy 88.9 154.94)) (stroke (width 0) (type default)) (uuid 5eef7d91-d366-480a-a527-894b9631ba4a))
+(label "INC_GN_N" (at 88.9 154.94 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 7407457f-542b-4c58-a5d4-a94deb652324))
+(wire (pts (xy 106.68 154.94) (xy 106.68 160.02)) (stroke (width 0) (type default)) (uuid d7a4f8ed-e7a7-43f7-ad4a-4bfe0cc45939))
+(label "GND" (at 106.68 160.02 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid d78442f5-c5f6-4981-b42e-3cc2be330e70))
+(symbol (lib_id "Taschenlampe:Switch__SW_Push") (at 135.89 154.94 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid dd3e66e4-35f4-430e-9916-7a02773b2161)
+ (property "Reference" "SW5" (at 135.89 145.84 0) (effects (font (size 1.3 1.3)) )) (property "Value" "DEC_gn" (at 135.89 148.44 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 135.89 154.94 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "SW5") (unit 1)))))
+(wire (pts (xy 129.54 154.94) (xy 124.46 154.94)) (stroke (width 0) (type default)) (uuid 570c084a-abcf-4342-97d6-8f355d88d449))
+(label "DEC_GN_N" (at 124.46 154.94 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 9ee86f85-b6dd-49e5-a9f1-73466ed23020))
+(wire (pts (xy 142.24 154.94) (xy 142.24 160.02)) (stroke (width 0) (type default)) (uuid 6ae66f59-c83e-4390-9366-8a5241ae966e))
+(label "GND" (at 142.24 160.02 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 58b8519e-5591-4c96-b1bc-45daa1d1e0d5))
+(symbol (lib_id "Taschenlampe:Switch__SW_Push") (at 171.45 154.94 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 639bd206-9197-4e64-8d51-e8b81f78e8ec)
+ (property "Reference" "SW6" (at 171.45 145.84 0) (effects (font (size 1.3 1.3)) )) (property "Value" "INC_bl" (at 171.45 148.44 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 171.45 154.94 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "SW6") (unit 1)))))
+(wire (pts (xy 165.1 154.94) (xy 160.02 154.94)) (stroke (width 0) (type default)) (uuid b4a38738-73be-446c-a5c4-f322d8009679))
+(label "INC_BL_N" (at 160.02 154.94 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 2d0c69d9-3808-46d0-8e75-e30ef76554de))
+(wire (pts (xy 177.8 154.94) (xy 177.8 160.02)) (stroke (width 0) (type default)) (uuid 0e7eab76-edaf-4aad-8d71-c07ead4c3858))
+(label "GND" (at 177.8 160.02 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid e5a4f393-afd7-41a9-a148-af1d27121bf0))
+(symbol (lib_id "Taschenlampe:Switch__SW_Push") (at 208.28 154.94 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid 33636807-1d37-46b2-955c-ececd66a7f2b)
+ (property "Reference" "SW7" (at 208.28 145.84 0) (effects (font (size 1.3 1.3)) )) (property "Value" "DEC_bl" (at 208.28 148.44 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 208.28 154.94 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "SW7") (unit 1)))))
+(wire (pts (xy 201.93 154.94) (xy 196.85 154.94)) (stroke (width 0) (type default)) (uuid bb9b29af-8061-4a32-96c9-0c13fb60d6c1))
+(label "DEC_BL_N" (at 196.85 154.94 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 8bbb6223-a2d0-4969-b792-960325fbfa09))
+(wire (pts (xy 214.63 154.94) (xy 214.63 160.02)) (stroke (width 0) (type default)) (uuid 4cc90498-b353-4d4b-a7c8-0a13d69d173a))
+(label "GND" (at 214.63 160.02 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid 76841919-ee67-4086-98fd-46db58ba07c8))
+(symbol (lib_id "Taschenlampe:Switch__SW_Push") (at 243.84 154.94 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid c9c84334-0c2b-4c18-be9e-c7a1a9f6f65f)
+ (property "Reference" "SW8" (at 243.84 145.84 0) (effects (font (size 1.3 1.3)) )) (property "Value" "STORE" (at 243.84 148.44 0) (effects (font (size 1.3 1.3)) )) (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 243.84 154.94 0) (effects (font (size 1.3 1.3)) (hide yes)))
+ (instances (project "AVR_Taschenlampe" (path "/541d12f2-a6a4-4bb3-98f3-885597618807" (reference "SW8") (unit 1)))))
+(wire (pts (xy 237.49 154.94) (xy 232.41 154.94)) (stroke (width 0) (type default)) (uuid 6cdcc223-eb54-4932-947b-939f2cb02bdc))
+(label "STORE_N" (at 232.41 154.94 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid dd27d125-3b70-4704-af9b-07077c78a254))
+(wire (pts (xy 250.19 154.94) (xy 250.19 160.02)) (stroke (width 0) (type default)) (uuid ff0a214a-8cc7-4a33-92a8-c7acaf512546))
+(label "GND" (at 250.19 160.02 0) (effects (font (size 1.17 1.17)) (justify left bottom)) (uuid f833f914-26e1-46d0-8ef2-2b956651f23a))
+)

@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "filename": "AVR_Taschenlampe.kicad_pro",
+    "version": 1
+  },
+  "schematic": {
+    "connection_grid_size": 50.0,
+    "meta": {
+      "version": 1
+    }
+  }
+}
