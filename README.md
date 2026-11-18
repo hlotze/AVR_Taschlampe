@@ -144,7 +144,7 @@ Details zu Pinbelegung, Bauteilen, LED-Auswahl und Prüfung stehen in der [Schal
 
 ### Platinenlayout
 
-Verweis / Link auf da Platinenlayout - die Vorgabe zur Platienengröße muss noch definiert werden
+[Belegungsplan für 24 × 18 Löcher im Hochformat](hardware/lochraster-24x18-hochformat.md) mit Lochkoordinaten und Drahtliste. Die [Zeichnung](hardware/lochraster-24x18-hochformat.svg) zeigt die Bestückungsseite, die gespiegelte Lötseite und den Drahtverlauf von oben. Zum Umplatzieren und Entflechten gibt es ein [editierbares KiCad-Board](hardware/lochraster-24x18-hochformat.kicad_pcb).
 
 ### Codierung
 

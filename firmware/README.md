@@ -73,14 +73,16 @@ Unterstützt werden CPU-Takte 1 und 8 MHz sowie PWM-Teiler 1 und 8. Die Zeitbasi
 
 | Funktion | Port | DIP-Pin |
 |---|---|---:|
-| Rot PWM über R5 an Q1 | PB2 / OC0A | 14 |
+| Rot PWM über R5 an Q1 | PB4 / OC1B | 16 |
 | Grün PWM über R6 an Q2 | PB3 / OC1A | 15 |
-| Blau PWM über R7 an Q3 | PB4 / OC1B | 16 |
+| Blau PWM über R7 an Q3 | PB2 / OC0A | 14 |
 | INC_rt / DEC_rt | PD0 / PD1 | 2 / 3 |
 | INC_gn / DEC_gn | PD2 / PD3 | 6 / 7 |
 | INC_bl / DEC_bl | PD4 / PD5 | 8 / 9 |
 | STORE | PD6 | 11 |
 | JP1 / SOLO gegen GND | PB0 | 12 |
+
+Beim Wechsel von der bisherigen Pinbelegung die Leitungen für Rot und Blau am AVR tauschen. Rot geht jetzt an Pin 16 und Blau an Pin 14. Bei einem bereits programmierten ATtiny genügt dafür ein Flash-Update, der EEPROM-Inhalt kann beibehalten werden.
 
 Die Firmware aktiviert die internen Pull-ups an PD0–PD6 und PB0. JP1 verbindet PB0 mit gemeinsamer Masse; ein zusätzlicher Pull-up-Widerstand ist nicht erforderlich. Auf dem Pollin-Board liegt PB0 am Extension-Port J4, Pin 9 (am Portsplitter die passende PB0-Beschriftung beachten). PB1 bleibt frei.
 

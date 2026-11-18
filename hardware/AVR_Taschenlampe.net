@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/hagen/develop/Elektronik/AVR/AVR_Taschenlampe/hardware/AVR_Taschenlampe.kicad_sch")
-		(date "2026-11-17T13:44:46")
+		(date "2026-11-18T13:26:52")
 		(tool "Eeschema 10.0.8")
 		(sheet
 			(number "1")
@@ -2466,8 +2466,8 @@
 			)
 			(node
 				(ref "U1")
-				(pin "16")
-				(pinfunction "PB4_16")
+				(pin "14")
+				(pinfunction "PB2_14")
 				(pintype "bidirectional")
 			)
 		)
@@ -2498,8 +2498,8 @@
 			)
 			(node
 				(ref "U1")
-				(pin "14")
-				(pinfunction "PB2_14")
+				(pin "16")
+				(pinfunction "PB4_16")
 				(pintype "bidirectional")
 			)
 		)

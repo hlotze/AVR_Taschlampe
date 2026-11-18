@@ -56,9 +56,9 @@ void storage_write_byte(uint8_t address, uint8_t value)
 
 static void pwm_set(uint8_t red, uint8_t green, uint8_t blue)
 {
-    OCR0A = red;
+    OCR0A = blue;
     OCR1A = green;
-    OCR1B = blue;
+    OCR1B = red;
 }
 
 static void show_current_levels(void)

@@ -23,9 +23,9 @@ D1 ist eine kleine RGB-LED mit gemeinsamer Anode. Q1–Q3 (BC547B) schalten dere
 
 | Funktion | Port | DIP-Pin |
 |---|---|---:|
-| Rot PWM | PB2 / OC0A | 14 |
+| Rot PWM | PB4 / OC1B | 16 |
 | Grün PWM | PB3 / OC1A | 15 |
-| Blau PWM | PB4 / OC1B | 16 |
+| Blau PWM | PB2 / OC0A | 14 |
 | INC_rt | PD0 | 2 |
 | DEC_rt | PD1 | 3 |
 | INC_gn | PD2 | 6 |
@@ -42,7 +42,7 @@ D1 ist eine kleine RGB-LED mit gemeinsamer Anode. Q1–Q3 (BC547B) schalten dere
 
 Die sieben Bedientaster SW2–SW8 schalten gegen Masse. Interne Pull-ups aktivieren; gedrückt entspricht LOW. Entprellung, Wiederholung und die Behandlung gleichzeitig gedrückter Tasten erfolgen in der Firmware. Die ISP-Leitungen werden nicht durch Taster oder LED-Treiber belastet.
 
-Timer 0 liefert Rot; Timer 1 liefert Grün und Blau und muss dafür im 8-Bit-PWM-Modus betrieben werden. Die Einstellung von PWM-Frequenz und Endwerten 0/255 ist Aufgabe der Firmware.
+Timer 0 liefert Blau. Timer 1 liefert Grün und Rot und muss dafür im 8-Bit-PWM-Modus betrieben werden. Die Einstellung von PWM-Frequenz und Endwerten 0/255 ist Aufgabe der Firmware.
 
 ## JP1 / SOLO
 
