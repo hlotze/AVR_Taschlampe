@@ -2,6 +2,8 @@
 
 Ein ATtiny2313 soll eine RGB-LED per PWM in ihrer Gesamtlichtfarbe beziehungsweise den Helligkeiten der einzelnen Farbkanäle steuern.
 
+![RGB-LED->Tzaschenlampe auf Lochrasterplatine](images/RGB_LED-Tashcenlampe.png)
+
 ## Bedienanleitung
 
 ### Einschalten und Ausschalten

@@ -119,7 +119,7 @@
     "footprint": "Package_TO_SOT_THT:TO-92_Inline"
   },
   "R2": {
-    "value": "330R",
+    "value": "100R",
     "pins": {
       "1": "K_RT",
       "2": "C_RT"
@@ -152,7 +152,7 @@
     "footprint": "Package_TO_SOT_THT:TO-92_Inline"
   },
   "R3": {
-    "value": "330R",
+    "value": "100R",
     "pins": {
       "1": "K_GN",
       "2": "C_GN"
@@ -185,7 +185,7 @@
     "footprint": "Package_TO_SOT_THT:TO-92_Inline"
   },
   "R4": {
-    "value": "330R",
+    "value": "100R",
     "pins": {
       "1": "K_BL",
       "2": "C_BL"

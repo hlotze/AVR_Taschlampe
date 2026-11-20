@@ -60,7 +60,7 @@ Für den Evaluationboard-Test PB0 am Portsplitter verwenden (Extension-Port J4, 
 | D1 | RGB, gemeinsame Anode | LED, konkreter Typ noch auszuwählen |
 | Q1–Q3 | BC547B, C/B/E = Pins 1/2/3 | Kathodentreiber |
 | R1 | 10 kΩ | RESET-Pull-up |
-| R2–R4 | je 330 Ω, 0,25 W, 5 % oder besser | LED-Strombegrenzung |
+| R2–R4 | je 100 Ω, 0,25 W, 5 % oder besser | LED-Strombegrenzung |
 | R5–R7 | je 1 kΩ | Basisstrombegrenzung |
 | R8–R10 | je 100 kΩ | Basis-Emitter-Pulldown |
 | C1 | 100 nF, Keramik, mindestens 10 V | Abblockung |
@@ -68,7 +68,7 @@ Für den Evaluationboard-Test PB0 am Portsplitter verwenden (Extension-Port J4, 
 | J1 | AVR-ISP, 2 × 3, 2,54 mm | Programmierung |
 | JP1 | Jumper, 1 × 2, 2,54 mm | Einzelkanalanzeige: PB0 nach GND |
 
-Die 330-Ω-Widerstände sind konservative Startwerte für eine kleine Anzeige-LED, keine Auslegung für eine Leistungs-LED. Beispielrechnung bei 4,5 V und angenommenen 0,2 V Transistorspannung: Rot mit 2,0 V Durchlassspannung etwa 7 mA, Grün/Blau mit 3,0 V etwa 4 mA. Die tatsächlichen Ströme und die optische Weißmischung hängen vom LED-Typ ab; RGB (127,127,127) garantiert kein farbmetrisches Weiß.
+Mit 100 Ω ergeben sich bei 4,5 V und angenommenen 0,2 V am Transistor rechnerisch etwa 23 mA für Rot bei 2,0 V LED-Durchlassspannung und 13 mA für Grün und Blau bei 3,0 V. Vor der Bestückung die zulässigen Ströme je Kanal anhand des LED-Datenblatts prüfen. Die tatsächlichen Ströme und die optische Weißmischung hängen vom LED-Typ ab.
 
 Vor Bestückung sind LED-Typ, zulässige Ströme und Pinfolge festzulegen. Das Symbol nimmt 1 = Rot-Kathode, 2 = gemeinsame Anode, 3 = Grün-Kathode und 4 = Blau-Kathode an. Deshalb hat D1 noch keinen verbindlichen Footprint. Auch der Batteriehalter benötigt nach mechanischer Auswahl einen Footprint oder Anschluss. Die übrigen Footprints sind Vorschläge für bedrahtete Bauteile.
 

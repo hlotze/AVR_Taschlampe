@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/hagen/develop/Elektronik/AVR/AVR_Taschenlampe/hardware/AVR_Taschenlampe.kicad_sch")
-		(date "2026-11-18T13:26:52")
+		(date "2026-11-18T14:06:01")
 		(tool "Eeschema 10.0.8")
 		(sheet
 			(number "1")
@@ -607,7 +607,7 @@
 		)
 		(comp
 			(ref "R2")
-			(value "330R")
+			(value "100R")
 			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
 			(fields
 				(field
@@ -661,7 +661,7 @@
 		)
 		(comp
 			(ref "R3")
-			(value "330R")
+			(value "100R")
 			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
 			(fields
 				(field
@@ -715,7 +715,7 @@
 		)
 		(comp
 			(ref "R4")
-			(value "330R")
+			(value "100R")
 			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
 			(fields
 				(field
